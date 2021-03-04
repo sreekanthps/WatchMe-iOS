@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+
+target 'WatchMe' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'FlexLayout'
+  pod 'PinLayout'
+  pod 'AlamofireImage'
+  pod 'lottie-ios'
+  pod 'GoogleMaps', '4.1.0'
+  pod 'GooglePlaces', '4.1.0'
+  pod 'Moya', '~> 14.0'
+  # Pods for WatchMe
+
+  target 'WatchMeTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'WatchMeUITests' do
+    # Pods for testing
+  end
+
+end
